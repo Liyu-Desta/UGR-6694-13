@@ -1,0 +1,432 @@
+/*Home page*/
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    overflow-x: hidden;
+    background-image: url("images/profile.jpg");
+    background-color: rgb(197, 245, 242);
+    margin: 0;
+    
+}
+#footers{
+    display: flex;
+    justify-content: end;
+   
+
+
+}
+#img1{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+#img2{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+#img3{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+#add{
+    text-decoration: dotted;
+    color: chocolate;
+    font-size: medium;
+    font-family: sans-serif;
+     border-right: 1px solid #f4f4f4;
+}
+#ftr4{
+    background-color: white;
+    padding-left: 30px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: -22px;
+}
+
+#img4{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 45px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  
+
+}
+#nm{
+    color: black;
+    text-align: center;
+    font-style: oblique;
+    padding: 85px;
+}
+q{
+    
+    padding: 90px;
+    color: rgb(71, 49, 6);
+    
+    
+}
+#aud{
+    margin-top: 15px;
+    padding: 60px;
+    margin-bottom: 100px;
+ 
+}
+
+
+/*about me page*/
+
+header{
+
+    width: 100%;
+    display: block;
+    justify-content: end;
+    background-color:white;
+    position: relative ;
+    margin-left: -5px;
+    margin-right:0px;
+    padding-right:20px;
+    padding-left:5px;
+    margin-top: -12px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    
+}
+
+nav ul li{
+    padding: 0;
+    text-transform: uppercase;
+
+}
+.menu a:hover{
+    background-color: darkturquoise;
+
+}
+nav li a{
+    display:block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    border-radius:  3px;
+    font-size: 17px;
+    color: black;
+}
+.header .menu{
+    clear: both;
+    max-height: 0;
+    transition:max-height .2s ease-out;
+}
+.header .menu-icon{
+    float: left ;
+   padding: 30px 23px;
+   position: relative;
+   cursor: pointer;
+   user-select: none;
+}
+.header .menu-icon .nav-icon{
+    background-color: #333;
+    display: block;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    transition:all .2s ease-out;
+
+}
+.header .menu-icon .nav-icon:before{
+    
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after{
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn{
+    display: none;
+}
+.header .menu-btn:checked ~ .menu{
+    max-height:300px;
+} 
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+@media (min-width:48em){
+    .header li{
+        float: left;
+    }
+    .header li a{
+        padding: 20px 30px;
+    }
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon{
+       display: none; 
+    }
+
+}
+
+.rmrk{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 450px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 10px;
+
+}
+.pic{
+ 
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+.rmrk .nt{
+    font-size: medium;
+    padding: 50px;
+    padding-top: 10px;
+    margin-top: 50px;
+    
+}
+.extd{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 450px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: relative;
+}
+.extd .nt1{
+    font-size: medium;
+    padding: 50px;
+    padding-top: 10px;
+    margin-top: 800px;
+    
+}
+.pic1{
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+h3{
+    font-size: medium;
+    padding: 50px;
+    padding-top: 200px;
+}
+.memories{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 450px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 1300px;
+   
+}
+.pic5{
+    width: 350px;
+    height: 350px;
+    transform: rotate(270deg);
+    margin-bottom: 1000px;
+    margin-top: 100px;
+    
+}
+.pic3{
+    width: 350px;
+    height: 350px;
+    margin-right: 50px;
+    margin-left: 50px;
+   
+}
+.pic4{
+    width: 350px;
+    height: 350px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 100px;
+    
+
+}
+
+#ftr3{
+        background-color: white;
+        margin-top: 3000px;
+        padding-left: 30px;
+        margin-left: -12px;
+        margin-right: -12px;
+        margin-bottom: -22px;
+        padding-right: 15px;
+    }
+@media (max-width: 350px) {
+        .rmrk {
+          flex-basis: 100%; 
+        }
+        .extd {
+            flex-basis: 100%; 
+          }
+        .memories {
+            flex-basis: 100%;
+          }
+      }
+
+/*Resume page*/
+
+.rmn{
+        padding-top: 100px;
+        flex: 1; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+      }
+.rmn h1{
+        padding-bottom: 45px;
+      }
+.rmn p,blockquote{
+        
+        padding-left:45px ;
+        padding-right:45px ;
+        padding-bottom: 50px;
+    
+      }
+.rmn blockquote{
+        padding-left:65px ;
+        padding-right:65px ;
+      }
+#ig{
+        padding-left: 45px;
+        padding-right: 45px;
+        width: 350px;
+        height: 380px;
+      }
+    
+.rmn video{
+        padding-left: 45px;
+        width: 350px;
+        height: 350px;
+        padding-bottom: 50px;
+      }
+.rmn figcaption{
+    padding-bottom: 150px;
+    padding-left: 50px;
+}
+
+      /*Certificates page*/
+
+
+#ftr{
+        background-color: white;
+        margin-top: 350px;
+        padding-left: 30px;
+        margin-left: -12px;
+        margin-right: -12px;
+        margin-bottom: -22px;
+        padding-right: 15px;
+    }
+.cm{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 25px;
+    }
+.cm p,h1{
+    padding-bottom: 50px;
+}
+table td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 25px;
+
+
+}
+table{
+    margin-right:25px ;
+    border-radius: 5px;
+}
+
+
+/*Contacts page*/
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+#ftr1{
+    background-color: white;
+    margin-top: 900px;
+    padding-left: 30px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: -22px;
+    padding-right: 15px;
+}
+.cm1{
+display: flex;
+flex-direction: column;
+height:200px;
+}
+textarea{
+margin-left: 50px;
+width: 350px;
+height: 150px;
+}
+.cm1 #email{
+margin-left: 50px;
+margin-right: 35px;
+}
+.cm1 #submit{
+background-color: rgb(47, 248, 47);
+padding: 10px;
+margin-top: 35px;
+margin-left: 150px;
+margin-right: 150px;
+}

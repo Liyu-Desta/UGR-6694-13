@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <ul>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
                 <li> <a href="home.html">Home</a></li>
                 <li> <a href="about_me.html">About me</a></li>
                 <li> <a href="resume.html">Resume</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="certificates.html">Certificates</a></li>   
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
     
         </nav>
     </header>
-    <main>
-        <img src="imgages/profile.jpg" alt="">
-        <form>
+    <main class="cm1" >
+        <img id="img4" src="images/profile.jpg" alt="my photo">
+        <form  class="frm">
             <label for="email">Email:</label>
             <input type="email" id="email"><br>
             <label for="message">comment:</label>
-            <input type="text" id="message"><br><br>
-            <input type="submit" value="submit">
+            <textarea  id="message"></textarea>
+            <input id="submit" type="submit" value="submit">
         </form>
+
     </main>
-    <footer>
+    <footer id="ftr1">
         <address>
-            Email: <a href="mailto:liyudesta22@gmail.com">liyudesta@gmali.com</a>.<br> 
+            Email: <a href="mailto:liyudesta22@gmail.com">liyudesta22@gmail.com</a>.<br> 
             Phone:+251974977967 <br>
             PO BOX :2070
         </address>
-        <section>
-            <H4>Address</H4>
-            <a href="https://t.me/LDT222"><img src="./img/telegram.jpg" alt="telegram"></a>
-            <a href=""><img src="./images/instagram.jpg" alt="instagram"></a>
-            <a href=""><img src="./images/whatsapp.jpg" alt="WhatsApp"></a>
+        <section id="footers">
+            <H4 id="add">follow me on</H4>
+            <a href=https://t.me/LDT222><img id="img1" src="./images/telegram.jpg" alt="telegram"></a>
+            <a href="https://instagram.com/_l_i_y_u_?igshid=OGQ5ZDc2ODk2ZA=="><img id="img2" src="./images/instagram.jpg" alt="instagram"></a>
+            <a href="https://wa.me/qr/VB2TKESWYO2KP1"><img id="img3" src="./images/whatsapp.jpg" alt="WhatsApp"></a>
         </section>
     </footer>
 </body>
