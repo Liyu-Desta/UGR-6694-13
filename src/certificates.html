@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li> <a href="home.html">Home</a></li>
-                <li> <a href="about_me.html">About me</a></li>
-                <li> <a href="resume.html">Resume</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-           
-        </nav>
-    </header>
-    <main>
-          
-        <table>
+<body class="has-background-primary-light">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-uppercase" href="home.html">Home</a>
+            <a class="navbar-item is-uppercase" href="about_me.html">About me</a>
+            <a class="navbar-item is-uppercase" href="resume.html">Resume</a>
+            <a class="navbar-item is-uppercase" href="certificates.html">Certificates</a>
+            <a class="navbar-item is-uppercase" href="contacts.html">Contacts</a>
+          </div>
+        </div>
+      </nav>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        
+          if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach(function($el) {
+              $el.addEventListener('click', function() {
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+              });
+            });
+          }
+        });
+      </script>
+    <main class="ml-6 mr-6 mb-6 pb-6">
+      <h1 class="title is-size-3 pt-6 mt-6">Certificates table</h1>
+      <p class="mt-6 pb-6 ">Here below I attached the certificates that I have awarded for taking short courses and internship apart from my regular education.</p>   
+        <table class="table is-bordered">
             <tr>
                 <td>While I was a second year campus student our networking teacher encouraged us to take full 
                     cisco packet tracer and fundamentals of networking course in cisco networking academy.</td>
@@ -38,19 +64,25 @@
             </tr>
 
         </table>
+        <hr class="has-background-primary-light">
+        <hr class="has-background-primary-light">
+        <hr class="has-background-primary-light">
     </main>
-    <footer>
-        <address>
-            Email: <a href="mailto:liyudesta22@gmail.com">liyudesta@gmali.com</a>.<br> 
-            Phone:+251974977967 <br>
-            PO BOX :2070
+    <footer class="has-background-white has-text-black is-small columns is-mobile  mt-6">
+        <address class="column is-half pr-4 ml-3">
+          Email: <a href="mailto:liyudesta22@gmail.com">liyudesta@gmali.com</a>.<br> 
+          Phone: +251974977967 <br>
+          PO BOX: 2070
         </address>
-        <section>
-            <h4>Address</h4>
-            <a href="https://t.me/LDT222"><img src="./images/telegram.jpg" alt="telegram"></a>
-            <a href=""><img src="./images/instagram.jpg" alt="instagram"></a>
-            <a href=""><img src="./images/whatsapp.jpg" alt="WhatsApp"></a>
+        <section class="column is-onequarter">
+        
         </section>
-    </footer>
+        <section class="column is-flex is-onequarter">
+            <h4 class="pr-6">Address</h4>
+          <a class="image is-32x32 pr-2" href="https://t.me/LDT222"><img src="./images/telegram.jpg" alt="telegram" class="is-rounded"></a>
+          <a class="image is-32x32 pr-2" href="https://instagram.com/_l_i_y_u_?igshid=OGQ5ZDc2ODk2ZA=="><img src="./images/instagram.jpg" alt="instagram" class="is-rounded"></a>
+          <a class="image is-32x32 pr-2" href="https://wa.me/qr/VB2TKESWYO2KP1"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="is-rounded"></a>
+        </section>
+      </footer>
 </body>
 </html>

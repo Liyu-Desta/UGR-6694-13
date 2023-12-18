@@ -3,42 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li> <a href="home.html">Home</a></li>
-                <li> <a href="about_me.html">About me</a></li>
-                <li> <a href="resume.html">Resume</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-           
-        </nav>
-    </header>
-    <main>
+<body class="has-background-primary-light">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-uppercase" href="home.html">Home</a>
+            <a class="navbar-item is-uppercase" href="about_me.html">About me</a>
+            <a class="navbar-item is-uppercase" href="resume.html">Resume</a>
+            <a class="navbar-item is-uppercase" href="certificates.html">Certificates</a>
+            <a class="navbar-item is-uppercase" href="contacts.html">Contacts</a>
+          </div>
+        </div>
+      </nav>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
         
-        <img src="images/profile.jpg" alt="my photo"><br>
-        <strong><em>LIYU DESTA,SOFTWARE ENGINEER</em></strong>
-        <q>living a moment ,being important.</q>
-        <audio controls>
-            <source src="images/Motivational_speech.mp3" type="video/mp4">
+          if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach(function($el) {
+              $el.addEventListener('click', function() {
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+              });
+            });
+          }
+        });
+      </script>
+      <hr class="has-background-primary-light">
+      <hr class="has-background-primary-light">
+      <hr class="has-background-primary-light">
+      <main class="has-text-centered pb-6">
+        <figure class="image is-512x512">
+            <svg class="is-rounded" xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 1 1">
+              <clipPath id="circle-clip">
+                <circle cx="0.5" cy="0.5" r="0.5" />
+              </clipPath>
+              <image xlink:href="images/profile.jpg" width="1" height="1" preserveAspectRatio="xMidYMid slice" clip-path="url(#circle-clip)" />
+            </svg>
+          </figure>
+          <hr class="has-background-primary-light">
+          <hr class="has-background-primary-light"> 
+        <strong class="pb-6 "><em>LIYU DESTA, SOFTWARE ENGINEER</em></strong><br>
+        <q class=" pt-6">living a moment, being important.</q><br>
+        <audio class="pt-4" controls>
+          <source src="images/Motivational_speech.mp3" type="video/mp4">
         </audio>
-
-    </main>
-    <footer>
-        <address>
-            Email: <a href="mailto:liyudesta22@gmail.com">liyudesta@gmali.com</a>.<br> 
-            Phone:+251974977967 <br>
-            PO BOX :2070
+      </main>
+      <hr class="has-background-primary-light">
+      <hr class="has-background-primary-light">
+      <hr class="has-background-primary-light">
+    <footer class="has-background-white has-text-black is-small columns is-mobile ">
+        <address class="column is-half pr- ml-3">
+          Email: <a href="mailto:liyudesta22@gmail.com">liyudesta@gmali.com</a>.<br> 
+          Phone: +251974977967 <br>
+          PO BOX: 2070
         </address>
-        <section>
-            <h4>Address</h4>
-            <a href=https://t.me/LDT222><img src="./images/telegram.jpg" alt="telegram"></a>
-            <a href="https://instagram.com/_l_i_y_u_?igshid=OGQ5ZDc2ODk2ZA=="><img src="./images/instagram.jpg" alt="instagram"></a>
-            <a href="https://wa.me/qr/VB2TKESWYO2KP1"><img src="./images/whatsapp.jpg" alt="WhatsApp"></a>
+        <section class="column is-onequarter">
+        
         </section>
-    </footer>
+        <section class="column is-flex is-onequarter">
+            <h4 class="pr-6">Address</h4>
+          <a class="image is-32x32 pr-2" href="https://t.me/LDT222"><img src="./images/telegram.jpg" alt="telegram" class="is-rounded"></a>
+          <a class="image is-32x32 pr-2" href="https://instagram.com/_l_i_y_u_?igshid=OGQ5ZDc2ODk2ZA=="><img src="./images/instagram.jpg" alt="instagram" class="is-rounded"></a>
+          <a class="image is-32x32 pr-2" href="https://wa.me/qr/VB2TKESWYO2KP1"><img src="./images/whatsapp.jpg" alt="WhatsApp" class="is-rounded"></a>
+        </section>
+      </footer>
 </body>
 </html>
