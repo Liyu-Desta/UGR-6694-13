@@ -3,42 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li> <a href="home.html">Home</a></li>
-                <li> <a href="about_me.html">About me</a></li>
-                <li> <a href="resume.html">Resume</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-    
+<body class="font-sans bg-green-100">
+    <header class="bg-white">
+        <nav class="flex justify-end items-center w-92% pt-12">
+            <div class="md:hidden">
+                <ion-icon onclick="onToggleMenu()" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+            </div>
+            <div class="hidden md:flex justify-end items-center space-x-4">
+                <a href="home.html" class="hover:bg-green-100 px-4 py-2">Home</a>
+                <a href="about_me.html" class="hover:bg-green-100 px-4 py-2">About me</a>
+                <a href="resume.html" class="hover:bg-green-100 px-4 py-2">Resume</a>
+                <a href="certificates.html" class="hover:bg-green-100 px-4 py-2">Certificates</a>
+                <a href="contacts.html" class="hover:bg-green-100 px-4 py-2">Contacts</a>
+            </div>
+            <div id="mobileMenu" class="md:hidden hidden absolute bg-white max-h-48  w-full top-16 right-0 z-50">
+                <a href="home.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Home</a>
+                <a href="about_me.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 ">About me</a>
+                <a href="resume.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Resume</a>
+                <a href="certificates.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Certificates</a>
+                <a href="contacts.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contacts</a>
+            </div>
         </nav>
     </header>
-    <main>
-        <img src="imgages/profile.jpg" alt="">
-        <form>
-            <label for="email">Email:</label>
-            <input type="email" id="email"><br>
-            <label for="message">comment:</label>
-            <input type="text" id="message"><br><br>
-            <input type="submit" value="submit">
-        </form>
+
+    <script>
+        function onToggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+
+            const mainContent = document.querySelector('main');
+            mainContent.classList.toggle('menu-open');
+        }
+    </script>
+        <main class="flex justify-center items-center h-screen mt-12 pt-12 pb-12 mb-12">
+        <div class="text-center mx-auto">
+            <img class="w-64 h-64 ml-12 rounded-full" src="images/profile.jpg" alt="my photo"><br>
+            <form class="mt-3">
+                <label for="email">Email:</label>
+                <input class="pr-8 mb-8" type="email" id="email"><br>
+                <label for="message">comment:</label>
+                <textarea cols="30" rows="5" type="text" id="message"> </textarea> <br><br>
+                <input class="pl-3 ml-12 pr-3 bg-green-400" type="submit" value="submit">
+            </form>
+        </div>
     </main>
-    <footer>
-        <address>
+    <footer class="bg-white flex item-center flex flex-col-md:flex-row">
+        <address class="pt-4 pl-4 mr-12 pr-12 w-full md:w-1/2 ">
             Email: <a href="mailto:liyudesta22@gmail.com">liyudesta@gmali.com</a>.<br> 
             Phone:+251974977967 <br>
             PO BOX :2070
         </address>
-        <section>
-            <H4>Address</H4>
-            <a href="https://t.me/LDT222"><img src="./img/telegram.jpg" alt="telegram"></a>
-            <a href=""><img src="./images/instagram.jpg" alt="instagram"></a>
-            <a href=""><img src="./images/whatsapp.jpg" alt="WhatsApp"></a>
+       
+        <section class="flex flex-col md:w-1/4 justify-end md:ml-12 md:pl-12 ml-0 pl-0">
+            
+            <h4 class="pt-12">Address</h4>
+        <section class="flex flex-row items-center justify-end ">
+            <a href=https://t.me/LDT222><img  class=" mr-8 w-10 h-10 md:mr-4" src="./images/telegram.jpg" alt="telegram"></a>
+            <a href="https://instagram.com/_l_i_y_u_?igshid=OGQ5ZDc2ODk2ZA=="><img  class="mr-8 w-10 h-10 md:mr-4" src="./images/instagram.jpg" alt="instagram"></a>
+            <a href="https://wa.me/qr/VB2TKESWYO2KP1"><img  class="w-10 h-10 mr-8 md:mr-4" src="./images/whatsapp.jpg" alt="WhatsApp"></a>
         </section>
+    </section>
     </footer>
 </body>
 </html>
+

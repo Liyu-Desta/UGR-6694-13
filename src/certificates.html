@@ -3,54 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li> <a href="home.html">Home</a></li>
-                <li> <a href="about_me.html">About me</a></li>
-                <li> <a href="resume.html">Resume</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-           
+<body class="font-sans bg-green-100">
+    <header class="bg-white">
+        <nav class="flex justify-end items-center w-92% pt-12">
+            <div class="md:hidden">
+                <ion-icon onclick="onToggleMenu()" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+            </div>
+            <div class="hidden md:flex justify-end items-center space-x-4">
+                <a href="home.html" class="hover:bg-green-100 px-4 py-2">Home</a>
+                <a href="about_me.html" class="hover:bg-green-100 px-4 py-2">About me</a>
+                <a href="resume.html" class="hover:bg-green-100 px-4 py-2">Resume</a>
+                <a href="certificates.html" class="hover:bg-green-100 px-4 py-2">Certificates</a>
+                <a href="contacts.html" class="hover:bg-green-100 px-4 py-2">Contacts</a>
+            </div>
+            <div id="mobileMenu" class="md:hidden hidden absolute bg-white max-h-48  w-full top-16 right-0 z-50">
+                <a href="home.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Home</a>
+                <a href="about_me.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200 ">About me</a>
+                <a href="resume.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Resume</a>
+                <a href="certificates.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Certificates</a>
+                <a href="contacts.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contacts</a>
+            </div>
         </nav>
     </header>
-    <main>
-          
-        <table>
-            <tr>
-                <td>While I was a second year campus student our networking teacher encouraged us to take full 
-                    cisco packet tracer and fundamentals of networking course in cisco networking academy.</td>
-                    <td> <a href="./images/networking.pdf">networking</a></td>
-            </tr>
-            <tr>
-                <td>While I was in Russia beside the training of industrial programming, I was taking an online 
-                    cyber security course as I believed that it will help me to build my future career and I got 
-                    an incredible knowledge on fundamentals of cyber security.</td>
-                <td><a href="./images/cyber_security.pdf">cyber security</a></td>
-            </tr>
-            <tr>
-                <td>After successfully completing the training in Russia, republic of Tatarstan I have been awarded 
-                    certificate of completion.</td>
-                <td><a href="./images/Russian_certificates.pdf">Russian certificates</a></td>
-            </tr>
 
-        </table>
-    </main>
-    <footer>
-        <address>
+    <script>
+        function onToggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+
+            const mainContent = document.querySelector('main');
+            mainContent.classList.toggle('menu-open');
+        }
+    </script>
+            <main class="flex-grow pt-12 mt-12 mb-12 pb-12 pl-12 pr-12">
+                <h1 class="font-bold pb-8 md:pl-12 md:ml-7 ">Certificates Table</h1>
+            <p class="pb-8 md:pl-12 md:ml-7">Here below I attached the certificates that I have awarded for taking short courses and internship apart from my regular education.</p> 
+                <div class="max-w-screen-lg mx-auto">
+                    <table class="table-auto border-collapse border border-black mx-auto">
+                        <tr>
+                            <td class="border border-black p-4">While I was a second year campus student, our networking teacher encouraged us to take the full Cisco Packet Tracer and fundamentals of networking courses in the Cisco Networking Academy.</td>
+                            <td class="border border-black p-4"><a href="./images/networking.pdf">networking</a></td>
+                        </tr>
+                        <tr>
+                            <td class="border border-black p-4">While I was in Russia, alongside the training of industrial programming, I was taking an online cyber security course as I believed it would help me build my future career. I gained incredible knowledge of the fundamentals of cyber security.</td>
+                            <td class="border border-black p-4"><a href="./images/cyber_security.pdf">cyber security</a></td>
+                        </tr>
+                        <tr>
+                            <td class="border border-black p-4">After successfully completing the training in the Republic of Tatarstan, Russia, I was awarded a certificate of completion.</td>
+                            <td class="border border-black p-4"><a href="./images/Russian_certificates.pdf">Russian certificates</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+
+    <footer class="bg-white flex item-center flex flex-col-md:flex-row">
+        <address class="pt-4 pl-4 mr-12 pr-12 w-full md:w-1/2 ">
             Email: <a href="mailto:liyudesta22@gmail.com">liyudesta@gmali.com</a>.<br> 
             Phone:+251974977967 <br>
             PO BOX :2070
         </address>
-        <section>
-            <h4>Address</h4>
-            <a href="https://t.me/LDT222"><img src="./images/telegram.jpg" alt="telegram"></a>
-            <a href=""><img src="./images/instagram.jpg" alt="instagram"></a>
-            <a href=""><img src="./images/whatsapp.jpg" alt="WhatsApp"></a>
+       
+        <section class="flex flex-col md:w-1/4 justify-end md:ml-12 md:pl-12 ml-0 pl-0">
+            
+            <h4 class="pt-12">Address</h4>
+        <section class="flex flex-row items-center justify-end ">
+            <a href=https://t.me/LDT222><img  class=" mr-8 w-10 h-10 md:mr-4" src="./images/telegram.jpg" alt="telegram"></a>
+            <a href="https://instagram.com/_l_i_y_u_?igshid=OGQ5ZDc2ODk2ZA=="><img  class="mr-8 w-10 h-10 md:mr-4" src="./images/instagram.jpg" alt="instagram"></a>
+            <a href="https://wa.me/qr/VB2TKESWYO2KP1"><img  class="w-10 h-10 mr-8 md:mr-4" src="./images/whatsapp.jpg" alt="WhatsApp"></a>
         </section>
+    </section>
     </footer>
 </body>
 </html>
