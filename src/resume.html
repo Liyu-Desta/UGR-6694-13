@@ -3,91 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-light">
     <header>
-        <nav>
-            <ul>
-                <li> <a href="home.html">Home</a></li>
-                <li> <a href="about_me.html">About me</a></li>
-                <li> <a href="resume.html">Resume</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-           
-           
-           
-            
-            
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarlist"
+            class="navbar-toggler"
+            aria-controls="navbarlist"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarlist">
+                <ul class="navbar-nav">
+                    <li class="nav-item active" > <a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item active "> <a class="nav-link active" href="about_me.html">About me</a></li>
+                    <li class="nav-item active"> <a class="nav-link active" href="resume.html">Resume</a></li>
+                    <li class="nav-item active"><a class="nav-link active" href="certificates.html">Certificates</a></li>
+                    <li class="nav-item active "><a class="nav-link active" href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <h1>Personal Statement</h1>
-        <p>
-        Growing up in Ethiopia, I was always taught to believe in the power of purpose and helping others.
-         The idiom "If you cry deep from your heart, tears can't be blocked" has stayed with me as
-          a reminder to always strive for what I truly desire and never give up on my dreams. As a child,
-           I was fascinated by the human body and aspired to become a surgeon. However, as I got older, my 
-           interests shifted towards the field of technology. When it was time to apply for university, I 
-           decided to follow my passion and pursue a degree in software engineering at Addis Ababa University 
-           (AAU), the oldest and most prestigious university in Ethiopia. However, when I was assigned to the 
-           software engineering department after completing the freshman course, I was faced with a new challenge. 
-           I had no previous experience with programming or computer languages, and I wasn't sure if I was up for
-            the task. Despite the initial difficulty, I was determined to make the most out of my situation. 
-            I started taking courses in python programming, data structures, and algorithms. With each passing day,
-             I became more and more interested in software engineering, and I found myself drawn to the challenge
-              of solving complex programming problems. I realized that I had discovered a new passion, and I was
-               eager to develop my skills even further. One day, I came across a one-year industrial programming 
-               and service training program in Alabuga, Russia. I applied for the program, hoping that it would 
-               provide me with an opportunity to learn from experienced professionals and immerse myself in a new
-                culture. I was thrilled when I received my acceptance letter and knew that this was the next step 
-                in my journey. In Russia, I learned new programming language and discovered new ways of thinking
-                 about software development. The experience was truly life-changing, and it only strengthened my 
-                 passion towards my dream. Now, I am excited to apply to your esteemed program. I believe that this
-                  is the next step in my journey, and I am eager to continue developing my skills and knowledge in
-                   the field of software engineering. I am hungry for knowledge and passionate about using 
-                   technology to improve lives. As a software developer, I believe that I can make a meaningful 
-                   contribution to the world.    
-        <blockquote cite="—W.J.Wilmont_Buxton">"No great work is ever done in a hurry. To develop a great scientific
-        discovery, to print a great picture, to write an immortal poem, to
-        become a minister, or a famous general—to do anything great requires
-        time, patience, and perseverance. These things are done by degrees,
-        “little by little.”"</blockquote>
-        
-        <p>As per quote I am confident that I have the passion, drive, and skills necessary to succeed in your program and make a positive impact on the world.
-        </p>
-        <aside>
-            <figure>
-                <video  controls>
-                    <source src="images/fun_with_me.mp4" type="video/mp4">
-                  </video>
-                  
-                <figcaption>Caption:Naberzheni chelni, Republic of Tatarstan, Russia</figcaption>
-            </figure>
-            <figure>
-                <img src="images/geting_certificate.jpg" alt="geting_certificate">
-                <figcaption>Caption: the completion day of Industrial programming and service training.</figcaption>
-            </figure>
-            <figure>
-                <video controls>
-                    <source src="images/explore_with_me.mp4" type="video/mp4">
-                  </video>
-                <figcaption>Going to attend festival</figcaption>
-            </figure>
-        </aside>
+    <main class="container">
+        <div class=" row">
+            <div class=" col-md-6 mt-5 p-2">
+                <h1 class="mb-4 ">Personal Statement</h1>
+                <p>
+                Growing up in Ethiopia, I was always taught to believe in the power of purpose and helping others.
+                The idiom "If you cry deep from your heart, tears can't be blocked" has stayed with me as
+                a reminder to always strive for what I truly desire and never give up on my dreams. As a child,
+                I was fascinated by the human body and aspired to become a surgeon. However, as I got older, my 
+                interests shifted towards the field of technology. When it was time to apply for university, I 
+                decided to follow my passion and pursue a degree in software engineering at Addis Ababa University 
+                (AAU), the oldest and most prestigious university in Ethiopia. However, when I was assigned to the 
+                software engineering department after completing the freshman course, I was faced with a new challenge. 
+                I had no previous experience with programming or computer languages, and I wasn't sure if I was up for
+                    the task. Despite the initial difficulty, I was determined to make the most out of my situation. 
+                    I started taking courses in python programming, data structures, and algorithms. With each passing day,
+                    I became more and more interested in software engineering, and I found myself drawn to the challenge
+                    of solving complex programming problems. I realized that I had discovered a new passion, and I was
+                    eager to develop my skills even further. One day, I came across a one-year industrial programming 
+                    and service training program in Alabuga, Russia. I applied for the program, hoping that it would 
+                    provide me with an opportunity to learn from experienced professionals and immerse myself in a new
+                        culture. I was thrilled when I received my acceptance letter and knew that this was the next step 
+                        in my journey. In Russia, I learned new programming language and discovered new ways of thinking
+                        about software development. The experience was truly life-changing, and it only strengthened my 
+                        passion towards my dream. Now, I am excited to apply to your esteemed program. I believe that this
+                        is the next step in my journey, and I am eager to continue developing my skills and knowledge in
+                        the field of software engineering. I am hungry for knowledge and passionate about using 
+                        technology to improve lives. As a software developer, I believe that I can make a meaningful 
+                        contribution to the world.    
+                <blockquote cite="—W.J.Wilmont_Buxton">"No great work is ever done in a hurry. To develop a great scientific
+                discovery, to print a great picture, to write an immortal poem, to
+                become a minister, or a famous general—to do anything great requires
+                time, patience, and perseverance. These things are done by degrees,
+                “little by little.”"</blockquote>
+                As per quote I am confident that I have the passion, drive, and skills necessary to succeed in your program and make a positive impact on the world.
+                </p>
+            </div>
+            <div class=" col-md-6 pb-5 mb-5">
+                <aside class="text-center mt-5 pt-3">
+                    <figure class="m-2">
+                        <video class="pb-5 img-fluid" width="350px" controls>
+                            <source  src="images/fun_with_me.mp4" type="video/mp4">
+                        </video>
+                        
+                        <figcaption>Naberzheni chelni, Republic of Tatarstan, Russia</figcaption>
+                    </figure>
+                    <figure class="m-2">
+                        <img class="pb-5 img-fluid" width="350px" src="images/geting_certificate.jpg" alt="geting_certificate">
+                        <figcaption>The completion day of Industrial programming and service training.</figcaption>
+                    </figure>
+                    <figure class="m-2">
+                        <video class="pb-5 img-fluid" width="350px" controls>
+                            <source src="images/explore_with_me.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Going to attend festival</figcaption>
+                    </figure>
+                </aside>
+            </div>
+        </div>
     </main>
     <footer>
-        <address>
-            Email: <a href="mailto:liyudesta22@gmail.com">liyudesta@gmali.com</a>.<br> 
-            Phone:+251974977967 <br>
-            PO BOX :2070
-        </address>
-        <section>
-            <h4>Address</h4>
-            <a href="https://t.me/LDT222"><img src="./images/telegram.jpg" alt="telegram"></a>
-            <a href=""><img src="./images/instagram.jpg" alt="instagram"></a>
-            <a href=""><img src="./images/whatsapp.jpg" alt="WhatsApp"></a>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <address>
+                        Email: <a href="mailto:liyudesta22@gmail.com">liyudesta22@gmail.com</a>.<br> 
+                        Phone: +251974977967 <br>
+                        PO BOX: 2070
+                    </address>
+                </div>
+                <div class="col-4">
+                    <section>
+                        <h4>Address</h4>
+                        <a href="https://t.me/LDT222">
+                            <img width="40px" src="./images/telegram.jpg" alt="telegram" >
+                        </a>
+                        <a href="https://instagram.com/_l_i_y_u_?igshid=OGQ5ZDc2ODk2ZA==">
+                            <img width="40px" src="./images/instagram.jpg" alt="instagram" >
+                        </a>
+                        <a href="https://wa.me/qr/VB2TKESWYO2KP1">
+                            <img width="40px" src="./images/whatsapp.jpg" alt="WhatsApp" >
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src ="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
 </body>
 </html>
